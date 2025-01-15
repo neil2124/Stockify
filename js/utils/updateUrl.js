@@ -1,6 +1,6 @@
 /**
  * @copyright Neil Mascarenhas 2023
- * @author sadee <nmascarenhas2001@gmail.com>
+ * @author  <nmascarenhas2001@gmail.com>
  */
 
 "use strict";
@@ -23,6 +23,6 @@ export const updateUrl = (filterObj, searchType) => {
     const /** {String} */ root = window.location.origin;
     const /** {String} */ searchQuery = urlEncode(filterObj);
 
-    window.location = `${root}/pages/${searchType}/${searchType}.html?${searchQuery}`;
+    window.location = `${root}/Stockify/pages/${searchType}/${searchType}.html?${searchQuery}`;
   }, 500);
 }

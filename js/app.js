@@ -1,6 +1,6 @@
 /**
  * @copyright Neil Mascarenhas 2023
- * @author sadee <nmascarenhas2001@gmail.com>
+ * @author Neil <nmascarenhas2001@gmail.com>
  */
 
 "use strict";
@@ -16,24 +16,7 @@ import { videoCard } from "./video_card.js";
 import { collectionCard } from "./collection_card.js";
 
 
-// Define the base path for your project
-const basePath = '/Stockify/';
 
-// Function to prepend the base path to all relative links
-function adjustLinks() {
-    const links = document.querySelectorAll('a, form');
-    links.forEach(link => {
-        if (link.getAttribute('href') && !link.getAttribute('href').startsWith('http')) {
-            link.setAttribute('href', basePath + link.getAttribute('href').replace(/^\/+/, ''));
-        }
-        if (link.getAttribute('action')) {
-            link.setAttribute('action', basePath + link.getAttribute('action').replace(/^\/+/, ''));
-        }
-    });
-}
-
-// Adjust links on page load
-adjustLinks();
 
 
 /**

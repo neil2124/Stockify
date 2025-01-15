@@ -1,6 +1,6 @@
 /**
  * @copyright Neil Mascarenhas 2023
- * @author sadee <nmascarenhas2001@gmail.com>
+ * @author  <nmascarenhas2001@gmail.com>
  */
 
 "use strict";
