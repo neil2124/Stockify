@@ -22,7 +22,9 @@ export const updateUrl = (filterObj, searchType) => {
   setTimeout(() => {
     const /** {String} */ root = window.location.origin;
     const /** {String} */ searchQuery = urlEncode(filterObj);
-
-    window.location = `${root}/Stockify/pages/${searchType}/${searchType}.html?${searchQuery}`;
+    
+    // Add /Stockify to the path only if it's not already in the origin
+    const basePath = root.includes('/Stockify') ? '' : '/Stockify';
+    window.location = `${root}${basePath}/pages/${searchType}/${searchType}.html?${searchQuery}`;
   }, 500);
 }
