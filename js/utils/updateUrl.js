@@ -23,8 +23,10 @@ export const updateUrl = (filterObj, searchType) => {
     const /** {String} */ root = window.location.origin;
     const /** {String} */ searchQuery = urlEncode(filterObj);
     
-    // Add /Stockify to the path only if it's not already in the origin
-    const basePath = root.includes('/Stockify') ? '' : '/Stockify';
-    window.location = `${root}${basePath}/pages/${searchType}/${searchType}.html?${searchQuery}`;
+    // Always include /Stockify for GitHub Pages deployment
+    const basePath = '/Stockify';
+    
+    // Use window.location.href instead of window.location
+    window.location.href = `${root}${basePath}/pages/${searchType}/${searchType}.html?${searchQuery}`;
   }, 500);
 }
