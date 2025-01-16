@@ -1,6 +1,6 @@
 /**
- * 
- *
+ * @copyright Neil Mascarenhas 2023
+ * @author Neil  <Neil Mascarenhas@gmail.com>
  */
 
 "use strict";
@@ -12,10 +12,11 @@
 import { urlEncode } from "./utils/urlEncode.js";
 
 
-
-// console.log('ENV object:', window.ENV); // Debug line
-
-const API_KEY = "W8FafNch0rCPq98ZbzAls3eHKeihZXxWxBpjadagj8nSMC9ncLPCYxQ2";
+/**
+ * ! [ Do not share API_KEY in public ]
+ * Follow my video instruction to get your api key
+ */
+const /** {String} */ API_KEY = "W8FafNch0rCPq98ZbzAls3eHKeihZXxWxBpjadagj8nSMC9ncLPCYxQ2";
 
 const /** {Object} */ headers = new Headers();
 headers.append("Authorization", API_KEY);

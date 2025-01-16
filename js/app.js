@@ -1,6 +1,6 @@
 /**
  * @copyright Neil Mascarenhas 2023
- * @author Neil <nmascarenhas2001@gmail.com>
+ * @author Neil  <Neil Mascarenhas@gmail.com>
  */
 
 "use strict";
@@ -14,9 +14,6 @@ import { photoCard } from "./photo_card.js";
 import { gridInit, updateGrid } from "./utils/masonry_grid.js";
 import { videoCard } from "./video_card.js";
 import { collectionCard } from "./collection_card.js";
-
-
-
 
 
 /**
